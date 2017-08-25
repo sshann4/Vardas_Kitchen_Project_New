@@ -1,0 +1,114 @@
+/*******set up categories grid************/
+.cat-container{
+  display: grid;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: 150px;
+}
+
+.cat1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.cat2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.cat3 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+.cat4 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+.cat5 {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+.cat6 {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+.circle{
+    width: 155px;
+    height: 155px;
+    margin-left: 15%;
+}
+
+a:hover img {
+  transform:scale(1.05,1.05);
+  -webkit-transform:scale(1.05,1.05);
+  -moz-transform:scale(1.05,1.05);
+}
+
+/*tool tip*/
+
+a .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #CD96CD;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: relative;
+    z-index: 1;
+    font-size: 90%;
+}
+
+a:hover .tooltiptext {
+    visibility: visible;
+}
+
+/***************categories images****************/
+
+.veg1 {
+  height: 60px;
+  width: 100px;
+  position: absolute;
+  right: 66%;
+  top: 12%;
+}
+
+.meat1{
+  height: 50px;
+  width: 90px;
+  position: absolute;
+  right: 16%;
+  top: 13%;
+}
+
+.glut-free {
+  height: 85px;
+  width: 85px;
+  position: absolute;
+  right: 68%;
+  top: 42%;
+}
+
+.sideDish {
+  height: 88px;
+  width: 90px;
+  position: absolute;
+  right: 15%;
+  top: 42%;
+}
+
+.salad {
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  right: 67%;
+  top: 76%;
+}
+
+.dessert {
+  height: 98px;
+  width: 74px;
+  position: absolute;
+  right: 17%;
+  top: 75%;
+}

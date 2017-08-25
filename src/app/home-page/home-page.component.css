@@ -1,0 +1,22 @@
+.container{
+  width: 100%;
+  height: 1000px;
+  padding: 0;
+}
+.headerContainer{
+  position: relative;
+  display: block;
+  height: 58%;
+  width: 100%;
+  background-image: url('../../assets/header.jpg');
+  background-repeat: no-repeat;
+  background-size:100%;
+  overflow: visible;
+}
+.mainContainer{
+  position: relative;
+  display: block;
+  height: 40%;
+  width: 100%;
+  padding: 0;
+}
