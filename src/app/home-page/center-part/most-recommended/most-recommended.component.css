@@ -1,4 +1,4 @@
-@import url("C:\\Users\\Shany\\Desktop\\HW_Amit\\Vardas_Kitchen_Project\\Vardas-Kitchen-New\\src\\assets\\David.ttf");
+/*@import url("C:\\Users\\Shany\\Desktop\\HW_Amit\\Vardas_Kitchen_Project\\Vardas-Kitchen-New\\src\\assets\\David.ttf");*/
 
 *{
   font-family: 'Varela Round', sans-serif;
@@ -10,7 +10,7 @@
   display: block;
   border-bottom: 2px solid #CD96CD;
   width: 95%;
-  font-family: "David";
+  /*font-family: "David";*/
   margin: 0px 5px;
 }
 

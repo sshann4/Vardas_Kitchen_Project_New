@@ -1,20 +1,27 @@
-.mainLogo{
+.darker-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+}
+
+.mainLogo {
   position: absolute;
   top: 25%;
   left: 15%;
   height: 50%;
 }
-.slogen{
+.slogen {
   display: block;
   font-family: "Brush Script MT", cursive;
-  font-size: 300%;
+  font-size: 350%;
   position: absolute;
   color: #CD96CD;
-  top:65%;
+  top:66%;
   left:33%;
   height: 50%;
 }
-
 /*************MEDIA ICONS*************/
 
 @import url(https://fonts.googleapis.com/css?family=Lato);
@@ -95,7 +102,7 @@ ul.social-icons {
 }
 
 .navbar-default{
-  z-index: 12;
+  z-index: 100;
   direction: rtl;
   width: 99%;
 }
