@@ -148,8 +148,8 @@ main {
 
 .rec-name {
   position: absolute;
-  top: 2%;
-  right: 25%;
+  top: 9%;
+  right: 20%;
   margin: 0 auto;
 }
 
@@ -157,8 +157,107 @@ main {
   position: absolute;
   top: 30%;
   right: 18%;
-  padding-top: 3%;
+  padding-top: 1%;
   padding-right: 3%;
   width: 70%;
   border-top: 3px solid #EEE0E5;
+}
+
+.caption {
+    position: absolute;
+    right: 15%;
+    bottom: 6%;
+    width: 30%;
+    text-align: center;
+    opacity: 1;
+    margin: 0 auto;
+    /*font-family: 'Varela Round', sans-serif;*/
+    font-size: 75%;
+    z-index: 5;
+}
+
+.posttitle{
+  font-family: 'Varela Round', sans-serif;
+  font-size: 200%;
+  margin: 0 auto;
+  color: inherit;
+}
+
+.level {
+  padding: 0;
+  margin: 0;
+}
+
+.level:before {
+    content: "";
+    display: inline-block;
+    background: url("/../../assets/Icons/chef.png") no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-right: 2%;
+    padding: 0;
+}
+
+.duration {
+  padding: 0;
+  margin: 0;
+}
+.duration:before {
+    content: "";
+    display: inline-block;
+    background: url("/../../assets/Icons/clock.png") no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-right: 2%;
+    margin-left: 1%;
+    padding: 0;
+}
+
+.type {
+  padding: 0;
+  margin: 0;
+}
+
+.type:before {
+    content: "";
+    display: inline-block;
+    background: url("../../assets/Icons/food.png") no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-right: 2%;
+    margin-left: 1%;
+    padding: 0;
+}
+
+.enjoy-css {
+  position: absolute;
+  left: 12%;
+  bottom: 7%;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 15%;
+  height: 15%;
+  cursor: pointer;
+  margin: 0 auto;
+  border: 2px solid rgba(255,217,102,1);
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  font: normal 10px/40px;
+  color: rgba(255,217,102,1);
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  letter-spacing: 1px;
+  background: rgba(0,0,0,0);
+}
+
+.enjoy-css:hover {
+  font: normal 25px/70px;
+  color: white;
+  background: rgba(255,217,102,1);
+  -webkit-transition: background-color 0.5s color 0.5s;
+  -moz-transition: background-color 0.5s color 0.5s;
+  -o-transition: background-color 0.5s color 0.5s;
+  transition: background-color 0.5s color 0.5s;
 }
