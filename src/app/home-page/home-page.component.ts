@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { TopPartComponent } from './top-part/top-part.component';
 import { CenterPartComponent } from './center-part/center-part.component';
 
 @Component({

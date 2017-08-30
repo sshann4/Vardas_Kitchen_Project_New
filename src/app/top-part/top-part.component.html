@@ -11,15 +11,15 @@
 
 <!-- logo part -->
 
-  <img alt="mainLogo" src="../../assets/logo/white_logo_transparent_background.png" class="mainLogo">
+  <img alt="mainLogo" routerLink="search" routerLinkActive="smallHeader" src="../../assets/logo/white_logo_transparent_background.png" class="mainLogo">
   <span class="slogen"> Homemade food- made with love</span>
 
 
-<div class="space"></div>
+<div routerLink="search" routerLinkActive="smallspace" class="space"></div>
 
 <!--- navbar - top --->
       <nav class="navbar navbar-default navbar-inverse" role="navigation" data-spy="affix" data-offset-top="555">
-           <!-- Brand and toggle get grouped for better mobile display -->
+           <!-- Brand and toggle get grouped for better small display -->
            <div class="navbar-header">
              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                <span class="sr-only">Toggle navigation</span>
@@ -33,54 +33,54 @@
            <!-- Collect the nav links, forms, and other content for toggling -->
            <div class="collapse navbar-collapse navbar-ex1-collapse ">
              <ul class="nav navbar-nav navbar-right  "  id="menu_items">
-              <li class="active navbar-right"><a href="#">דף הבית</a></li>
-              <li class="navbar-right"><a href="#">מי אנחנו</a></li>
+              <li class="active navbar-right"><a routerLink="home" routerLinkActive="active" href="#">דף הבית</a></li>
+              <li class="navbar-right"><a routerLink="" routerLinkActive="active" href="#">מי אנחנו</a></li>
               <li class="navbar-right"> <a href="#">אוכל ביתי</a></li>
               <li  class="navbar-right">
                  <a href="#" class="dropdown-toggle " data-toggle="dropdown" dir="rtl">סנן מתכונים לפי  <b class="caret"></b></a>
                     <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu" dir="rtl">
                           <li class="dropdown-submenu"><a tabindex="-1" href="#">לפי סוג</a>
                               <ul class="dropdown-menu">
-                                 <li><a href="#">צמחוני</a></li>
-                                 <li><a href="#">בשרי</a></li>
-                                 <li><a href="#">ללא גלוטן</a></li>
-                                 <li><a href="#">מנות צד</a></li>
-                                 <li><a href="#">סלטים</a></li>
-                                 <li><a href="#">קינוחים</a></li>
+                                 <li><a routerLink="search/vegetarian" routerLinkActive="active" href="#">צמחוני</a></li>
+                                 <li><a routerLink="search/meat" routerLinkActive="active" href="#">בשרי</a></li>
+                                 <li><a routerLink="search/no-gluten" routerLinkActive="active" href="#">ללא גלוטן</a></li>
+                                 <li><a routerLink="search/side-dish" routerLinkActive="active" href="#">מנות צד</a></li>
+                                 <li><a routerLink="search/salads" routerLinkActive="active" href="#">סלטים</a></li>
+                                 <li><a routerLink="search/deserts" routerLinkActive="active" href="#">קינוחים</a></li>
                                </ul>
                            </li>
                           <li class="dropdown-submenu"><a tabindex="-1" href="#">לפי רמת קושי</a>
                               <ul class="dropdown-menu">
-                                 <li><a href="#">קשה</a></li>
-                                 <li><a href="#">בינוני</a></li>
-                                 <li><a href="#">קל</a></li>
+                                 <li><a routerLink="search/hard" routerLinkActive="active" href="#">קשה</a></li>
+                                 <li><a routerLink="search/medium" routerLinkActive="active" href="#">בינוני</a></li>
+                                 <li><a routerLink="search/easy" routerLinkActive="active" href="#">קל</a></li>
                                </ul>
                            </li>
                            <li class="dropdown-submenu"><a tabindex="-1" href="#">לפי ארוחה</a>
                              <ul class="dropdown-menu">
-                               <li><a  href="#">ארוחת בוקר</a></li>
-                                <li><a href="#">ארוחת צהריים</a></li>
-                                <li><a href="#">ארוחת ערב</a></li>
+                               <li><a  routerLink="search/breakfast" routerLinkActive="active" href="#">ארוחת בוקר</a></li>
+                                <li><a routerLink="search/lunch" routerLinkActive="active" href="#">ארוחת צהריים</a></li>
+                                <li><a routerLink="search/dinner" routerLinkActive="active" href="#">ארוחת ערב</a></li>
                               </ul>
                           </li>
                           <li class="dropdown-submenu"><a tabindex="-1" href="#">לפי חג</a>
                               <ul class="dropdown-menu">
-                                 <li><a href="#">ראש השנה</a></li>
-                                 <li><a href="#">שבועות</a></li>
-                                 <li><a href="#">סוכות</a></li>
-                                 <li><a href="#">חנוכה</a></li>
-                                 <li><a href="#">פורים</a></li>
-                                 <li><a href="#">פסח</a></li>
+                                 <li><a routerLink="search/rosh-hashana" routerLinkActive="active">ראש השנה</a></li>
+                                 <li><a routerLink="search/shaavout" routerLinkActive="active">שבועות</a></li>
+                                 <li><a routerLink="search/succot" routerLinkActive="active">סוכות</a></li>
+                                 <li><a routerLink="search/hanuca" routerLinkActive="active">חנוכה</a></li>
+                                 <li><a routerLink="search/purim" routerLinkActive="active">פורים</a></li>
+                                 <li><a routerLink="search/passhover" routerLinkActive="active">פסח</a></li>
                                </ul>
                            </li>
                            <li class="dropdown-submenu"><a tabindex="-1" href="#">לפי צורת בישול</a>
                                <ul class="dropdown-menu">
-                                  <li><a href="#">תנור</a></li>
-                                  <li><a href="#">גז</a></li>
-                                  <li><a href="#">מיקרו</a></li>
-                                  <li><a href="#">בישול ארוך</a></li>
-                                  <li><a href="#">טיגון</a></li>
-                                  <li><a href="#">אפייה</a></li>
+                                  <li><a routerLink="search/oven" routerLinkActive="active">תנור</a></li>
+                                  <li><a routerLink="search/gaz" routerLinkActive="active">גז</a></li>
+                                  <li><a routerLink="search/microw" routerLinkActive="active">מיקרו</a></li>
+                                  <li><a routerLink="search/long-cooking" routerLinkActive="active">בישול ארוך</a></li>
+                                  <li><a routerLink="search/frying" routerLinkActive="active">טיגון</a></li>
+                                  <li><a routerLink="search/baking" routerLinkActive="active">אפייה</a></li>
                                 </ul>
                             </li>
                     </ul>
@@ -91,7 +91,7 @@
              <div class="col-sm-3 col-md-3">
                <form class="navbar-form" role="search">
                  <div class="input-group">
-                   <input type="text" class="form-control" placeholder="Search" name="q">
+                   <input type="text" class="form-control" placeholder="חיפוש" name="q">
                    <div class="input-group-btn">
                      <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
                    </div>

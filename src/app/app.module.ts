@@ -1,15 +1,43 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { TopPartComponent } from './home-page/top-part/top-part.component';
+import { TopPartComponent } from './top-part/top-part.component';
 import { CenterPartComponent } from './home-page/center-part/center-part.component';
 import { MostRecommendedComponent } from './home-page/center-part/most-recommended/most-recommended.component';
 import { SidePartComponent } from './home-page/center-part/side-part/side-part.component';
 import { SwitchRecipesComponent } from './home-page/center-part/switch-recipes/switch-recipes.component';
 import { ResultPageComponent } from './result-page/result-page.component';
 import { SpecificRecipePageComponent } from './specific-recipe-page/specific-recipe-page.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
+const appRoutes: Routes = [
+  {
+    path: 'home',
+    component: HomePageComponent
+  },
+  {
+    path: 'search/specific-recepie',
+    component: SpecificRecipePageComponent,
+    data: { width: '20%' }
+  },
+  {
+    path: 'search/:id',
+    component: ResultPageComponent,
+    data: { width: '20%' }
+  },
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent
+  }
+];
 
 @NgModule({
   declarations: [
@@ -21,10 +49,13 @@ import { SpecificRecipePageComponent } from './specific-recipe-page/specific-rec
     SidePartComponent,
     SwitchRecipesComponent,
     ResultPageComponent,
-    SpecificRecipePageComponent
+    SpecificRecipePageComponent,
+    PageNotFoundComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes, { enableTracing: true } // <-- debugging  purposes only
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
