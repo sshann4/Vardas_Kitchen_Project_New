@@ -11,11 +11,13 @@
 
 <!-- logo part -->
 
-  <img alt="mainLogo" routerLink="search" routerLinkActive="smallHeader" src="../../assets/logo/white_logo_transparent_background.png" class="mainLogo">
+  <img alt="mainLogo" [ngClass]="{'smallHeader': isSmallHeader}" src="../../assets/logo/white_logo_transparent_background.png" class="mainLogo">
   <span class="slogen"> Homemade food- made with love</span>
 
+  <!-- [routerLink]="['/search'] || ['/specific-recepies']" routerLinkActive="" -->
 
-<div routerLink="search" routerLinkActive="smallspace" class="space"></div>
+
+<div [ngClass]="{'smallspace': isSmallHeader}" class="space"></div>
 
 <!--- navbar - top --->
       <nav class="navbar navbar-default navbar-inverse" role="navigation" data-spy="affix" data-offset-top="555">

@@ -19,9 +19,9 @@ const appRoutes: Routes = [
     component: HomePageComponent
   },
   {
-    path: 'search/specific-recepie',
+    path: 'specific-recepies',
     component: SpecificRecipePageComponent,
-    data: { width: '20%' }
+    // data: { width: '20%' }
   },
   {
     path: 'search/:id',
@@ -30,8 +30,9 @@ const appRoutes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
+    component: HomePageComponent
+    // redirectTo: '/home',
+    // pathMatch: 'full'
   },
   {
     path: '**',
@@ -54,7 +55,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes, { enableTracing: true } // <-- debugging  purposes only
+    RouterModule.forRoot(appRoutes, { enableTracing: false } // <-- debugging  purposes only
     )
   ],
   providers: [],

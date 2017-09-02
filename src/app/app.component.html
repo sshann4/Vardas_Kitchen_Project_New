@@ -1,7 +1,5 @@
 <main class="container">
-  <app-top-part routerLinkActive="smallHeader" class="headerContainer">
-    <a routerLink="recepie"></a>
-    <a routerLink="search"></a>
+  <app-top-part [ngClass]="{'smallHeader': isSmallHeader}" class="headerContainer">
   </app-top-part>
   <router-outlet style="height: 100%;"></router-outlet>
 </main>
